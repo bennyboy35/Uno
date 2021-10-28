@@ -1,4 +1,9 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Game {
-    Deck deck = new Deck();
-    DiscardDeck discardDeck = new DiscardDeck();
+    Deck _deck = new Deck();
+    DiscardDeck _discardDeck = new DiscardDeck();
+    List<Player> _players = new ArrayList<>();
+
 }
