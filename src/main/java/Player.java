@@ -1,17 +1,31 @@
+import Cards.ICard;
+
+import java.util.List;
+
 public class Player {
-    private String _name;
-    private EPlayerColour _colour;
+
+    private final String _name;
+    private final EPlayerColour _colour;
+    private Hand _hand = new Hand();
 
     public Player(String name, EPlayerColour colour) {
-        this._name = name;
-        this._colour = colour;
+        _name = name;
+        _colour = colour;
     }
 
-    public String get_name() {
+    public String getName() {
         return _name;
     }
 
-    public EPlayerColour get_colour() {
+    public EPlayerColour getColour() {
         return _colour;
+    }
+
+    public void addToHand(ICard card) {
+        _hand.addCard(card);
+    }
+
+    public List<ICard> getHand() {
+        return _hand.getHand();
     }
 }

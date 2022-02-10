@@ -1,16 +1,17 @@
 
 
 import Cards.ICard;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
-public class Test_Deck {
+import static org.testng.Assert.assertEquals;
+
+public class DeckTest {
 
     @Test
     public void testDeckGeneration(){
 //        Test for correct number of cards in deck
         Deck deck = new Deck();
-        Assertions.assertEquals(112, deck.getDeckSize());
+        assertEquals(deck.getDeckSize(), 112);
 
 //        Test for correct number of cards of each colour
         int numOfBlue = 0;
@@ -37,9 +38,9 @@ public class Test_Deck {
                     break;
             }
         }
-        Assertions.assertEquals(26, numOfBlue);
-        Assertions.assertEquals(26, numOfRed);
-        Assertions.assertEquals(26, numOfYellow);
-        Assertions.assertEquals(26, numOfGreen);
+        assertEquals(numOfBlue, 26);
+        assertEquals(numOfRed, 26);
+        assertEquals(numOfYellow, 26);
+        assertEquals(numOfGreen, 26);
     }
 }

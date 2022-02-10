@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test_DiscardDeck" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-07T16:08:10" hostname="BENSWORKPC" time="0.048">
-  <properties/>
-  <testcase name="testActiveCard()" classname="Test_DiscardDeck" time="0.048"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
